@@ -2,6 +2,383 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto ;
+    font-family: Roboto;
 }
 
+/*PRIMERA SECCION CON LA NAV*/
+
+.first-section{
+    
+    height: 100vh;
+    width: 100%;
+    
+    /*opacity: 0.1;*/
+}
+
+
+
+.fruits{
+    background: linear-gradient(rgba(255, 252, 252, 0.887),rgba(255, 252, 252, 0.887))
+    ,url(images/fruits.jpg) center center fixed;
+    background-size: cover;
+    width: 50%;
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.fruits h1{
+   margin-left: 2rem;
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+
+.fruits-logo{
+    margin-top:4rem;
+    margin-left: 2rem;
+    width: 3.7rem;
+    height: 3.7rem;
+}
+.fruits h1 span{
+    color: #FF8000;
+
+}
+
+.fruits p{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: bolt;
+}
+
+.fruits button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.fruits button:last-child{
+    background-color: white;
+    color: black;
+    margin-left:1rem;
+    border: 1px solid black;
+}
+
+.buttons{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+
+
+nav img{
+    width: 3rem;
+
+}
+
+button{
+    cursor: pointer;
+    background-color: #FF8000 ;
+    color:white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+ 
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.promotions-nav ul li a{
+    color:black;
+}
+
+.promotions-nav{
+   
+    font-weight: 600;
+   
+}
+
+.main-nav{
+    background-color: #FF8000;
+}
+
+.main-nav ul li a {
+    font-size: 1.3rem;
+}
+
+.first{
+    display: flex;
+    align-items: center;
+}
+
+
+.first img{
+    width: 3rem;
+    margin-right: 10px;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left img{
+    width: 3rem;
+    margin-right: 10px;
+}
+
+.right{
+    display:flex;
+    align-items: center;
+}
+
+.right img{
+    width: 3rem;
+}
+
+.meat{
+
+    width: 50%;
+    
+}
+.descount{
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: 9rem;
+   left: 32rem;
+}
+
+.descount h1{
+    position: absolute;
+    top: 11rem;
+    left: 34rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 3;
+    color: white;
+}
+
+
+.meat img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.images{
+    display: flex;
+}
+
+.squares{
+    display: flex;
+    margin-left: 2rem;
+}
+
+.squares img{
+    width: 9rem;
+    height: 7rem;
+    margin: 0.3rem;
+    border-radius: 20px;
+}
+
+/*FOOD GALERY SECTION*/
+
+.food-galery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.food-galery .galery img{
+    object-fit: cover;
+}
+
+.p-food-galery{
+    color:#FF8000;
+    font-size: 1.3rem;
+}
+
+.food-galery h1{
+    font-size: 3.6rem;
+    font-weight: 600;
+ 
+}
+
+.food-galery-text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.food-galery-no-galery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+
+.galery{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:2rem;
+    grid-auto-flow: dense;
+    height: 100%;
+}
+
+.wide{
+    grid-column: span 2;
+}
+
+.tall{
+    grid-row: span 2;
+}
+
+/*OUR CHEFS SECTION*/
+
+.our-chefs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.chefs-container{
+    background: linear-gradient(rgba(255, 252, 252, 0.887),rgba(255, 252, 252, 0.887))
+    ,url(images/salad.jpg) center center fixed;
+    background-size: cover;
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chefs{
+    display: flex;
+    width: 70%;
+    height:60vh;
+    align-items: center;
+
+    
+}
+
+.chefs img{
+    width: 17rem;
+    height: 15rem;
+    object-fit: cover;
+   
+}
+
+.chef-card{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#chef-1{
+    transform: rotate(-10deg);
+    
+}
+
+#chef-2{
+    transform: rotate(10deg);
+    z-index: 3;
+}
+
+#chef-3{
+    transform: rotate(-10deg);
+}
+
+/*MOTHERS DAY SECTION*/
+
+.mothers-day{
+    background-image: url(images/definitiva.png);
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    height: 37.5vh;
+    background-color: #FF8000;
+    background-repeat: no-repeat;
+}
+
+.mother-offer{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+.mother-offer h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #FF8000;
+}
+.mother-offer p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.mother-buttons{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+
+.mother-buttons a{
+    padding: 5px;
+    cursor: pointer;
+   background-color: white;
+    font-size: 1rem;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+  
+}
+
+.mother-buttons img{
+    padding: 5px 10px;
+    cursor: pointer;
+   background-color: white;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
