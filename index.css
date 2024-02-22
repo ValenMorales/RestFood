@@ -5,6 +5,10 @@
     font-family: Roboto;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /*PRIMERA SECCION CON LA NAV*/
 
 .first-section{
@@ -27,6 +31,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
+   
 }
 
 .fruits h1{
@@ -76,12 +81,6 @@
 }
 
 
-
-nav img{
-    width: 3rem;
-
-}
-
 button{
     cursor: pointer;
     background-color: #FF8000 ;
@@ -112,6 +111,12 @@ nav ul li a{
     font-weight: bold;
 }
 
+.options img{
+    width: 1.8rem;
+    margin-right: 10px;
+
+}
+
 .promotions-nav ul li a{
     color:black;
 }
@@ -128,6 +133,7 @@ nav ul li a{
 
 .main-nav ul li a {
     font-size: 1.3rem;
+    font-weight: 100;
 }
 
 .first{
@@ -139,12 +145,37 @@ nav ul li a{
 .first img{
     width: 3rem;
     margin-right: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.first h1{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.first h1 span {
+    color:white;
 }
 
 .mail{
+ 
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 50px;
+}
+
+.mail p {
+    font-size: 1rem;
+    font-weight: 200;
+
+}
+
+.mail img{
+    width: 1.5rem;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .left{
@@ -152,24 +183,20 @@ nav ul li a{
     align-items: center;
 }
 
-.left img{
-    width: 3rem;
-    margin-right: 10px;
+.left ul li a {
+font-weight: 300;
 }
+
 
 .right{
     display:flex;
     align-items: center;
 }
 
-.right img{
-    width: 3rem;
-}
 
 .meat{
-
     width: 50%;
-    
+    height: 34rem;
 }
 .descount{
     width: 7rem;
@@ -218,10 +245,12 @@ nav ul li a{
     flex-direction: column;
     align-items: center;
     margin-top: 5rem;
+    
 }
 
 .food-galery .galery img{
     object-fit: cover;
+
 }
 
 .p-food-galery{
@@ -246,7 +275,14 @@ nav ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+}
+
+.pedacito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
 }
 
 .galery{
@@ -255,7 +291,7 @@ nav ul li a{
     grid-template-rows: repeat(2,1fr);
     gap:2rem;
     grid-auto-flow: dense;
-    height: 100%;
+    height: 60%;
 }
 
 .wide{
@@ -273,7 +309,6 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 
@@ -382,3 +417,151 @@ nav ul li a{
     width: 2rem;
     height: 2rem;
 }
+
+
+/*OUR BLOG SECTION */
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.blog-sections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 34rem;
+    margin:  0 2rem;
+    
+}
+
+.blog-sections img{
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    margin: 0 1.5rem;
+}
+
+
+.blog-section {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 27rem;
+height: 27rem;
+margin: 0 1.5rem;
+padding: 1rem 0;
+background-color: rgba(253, 251, 251, 0.815);
+/*box-shadow: 0 0 5px rgba(106, 108, 108, 0.277); */
+border: 3px solid rgba(116, 111, 106, 0.1);
+border-radius: 10px;
+}
+
+.blog-section .blog-image{
+    width: 21rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-section h1{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.blog-section .naranja{
+    color: #FF8000;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.blog-section .negro{
+    font-size: 1.01rem;
+    text-align: center;
+    font-weight: 300;
+    margin: 1rem ;
+    
+}
+
+
+.blog-section button{
+    padding: 7px 17px;
+
+    cursor: pointer;
+    background-color: #FF8000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+ 
+}
+
+.blog-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 7rem;
+        margin-bottom: 2rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.primer-footer{
+    background: url(images/fondito.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 10rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color:white;
+     pad: 2rem;
+}
+
+.primer-footer ul{
+    display: flex;
+    list-style: none;
+}
+
+.primer-footer li{
+    font-size: large;
+    margin: 2rem 1rem;
+    
+}
+
+.primer-footer h1{
+    font-size: 2.3rem;
+    font-weight: 100;
+}
+
+.primer-footer h1 span{
+    color:#FF8000;
+}
+
+.segundo-footer{
+  background: url(/images/fondito.jpeg);
+  background-size:cover;
+  height: 10vh;
+  border: 1px white solid;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.segundo-footer p {
+    font-size: 1rem;
+    color:white;
+}
+
