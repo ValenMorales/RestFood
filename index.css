@@ -15,6 +15,13 @@ button{
     color:white;
 }
 
+
+p{
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 body::before {
     content: "";
     background-image: url(./images/mainfond.jpg);
@@ -647,8 +654,8 @@ nav ul li a{
 
 .mail p {
     font-size: 1rem;
-    font-weight: 200;
-
+   
+    color:black;
 }
 
 .mail img{
@@ -744,8 +751,7 @@ font-weight: 300;
 }
 
 .food-galery-text{
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -764,6 +770,13 @@ font-weight: 300;
     justify-content: center;   
 }
 
+.food-galery-no-galery h1{
+    font-family: "Alegreya Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+    font-size: 3.5rem;
+}
+
 .galery{
     display:grid;
     grid-template-columns: repeat(5,1fr);
@@ -771,6 +784,12 @@ font-weight: 300;
     gap:2rem;
     grid-auto-flow: dense;
     height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.galery-img{
+    background-size:cover;
 }
 
 .wide{
@@ -779,6 +798,105 @@ font-weight: 300;
 
 .tall{
     grid-row: span 2;
+}
+
+/*DIRECTION SECTION*/
+
+.direction{
+    background: url(images/gray-font.png);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+   
+}
+
+.left-direction{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+
+.right-direction{
+    display: flex;
+    width: 50%;
+    align-items: center;
+  
+}
+
+.right-direction img{
+    border: 2px solid white;
+}
+
+.large-direction{
+    width:18rem;
+    height: 30rem;
+}
+
+.short-direction{
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    top: 10rem;
+    left: 5rem;
+}
+
+
+.first-text{
+    font-size: 1.1rem;
+    line-height: 1.2;
+    
+}
+
+.icons-{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    
+}
+.social-media{
+    display:flex;
+}
+
+.social-media figure{
+    margin: 0 0.5rem;
+}
+
+.contact{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    line-height: 1.7;
+}
+
+
+.our-direction{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.our-direction h1{
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 1rem 0;
+
+}
+
+
+.icons- button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #FF8000;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+    font-size: large;
 }
 
 /*OUR CHEFS SECTION*/
@@ -807,7 +925,6 @@ font-weight: 300;
     width: 70%;
     height:60vh;
     align-items: center;
-
     
 }
 
@@ -815,7 +932,6 @@ font-weight: 300;
     width: 17rem;
     height: 15rem;
     object-fit: cover;
-   
 }
 
 .chef-card{
@@ -828,12 +944,11 @@ font-weight: 300;
 
 #chef-1{
     transform: rotate(-10deg);
-    
 }
 
 #chef-2{
     transform: rotate(10deg);
-    z-index: 3;
+    z-index: 2;
 }
 
 #chef-3{
@@ -845,13 +960,14 @@ font-weight: 300;
 .mothers-day{
     margin-top: 2rem;
     background-image: url(images/definitiva.png);
-    background-size: auto;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: left;
     width: 100%;
     height: 38.5vh;
     background-repeat: no-repeat;
+   
 }
 
 .mother-offer{
@@ -1032,7 +1148,7 @@ footer{
   background: url(/images/fondito.jpeg);
   background-size:cover;
   height: 10vh;
-  border: 1px white solid;
+  border-top: 1px gray solid;
   display: flex;
   align-items: center;
   text-align: center;
