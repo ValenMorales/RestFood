@@ -118,6 +118,11 @@ body::before {
     background-color: white;
 }
 
+.dish-booton button:hover{
+    background-color: var(--main_color);
+    color: white;
+}
+
 
 
 .dish{
@@ -173,6 +178,8 @@ body::before {
 .small-images-1{
     margin-left: 1rem;
 }
+
+
 
 .small-images-2{
     display: flex;   
@@ -258,10 +265,11 @@ height: 15rem;
 
 .container-grid-main {
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 15.5rem);
     grid-gap: 0.1rem;
    align-items: center;
    justify-items: center;
+   justify-content: center;
 }
 
 .container-grid-image img{
@@ -328,6 +336,10 @@ height: 15rem;
     color: #363534;
     background-color:  rgb(234, 233, 233);
     border: 1px solid;
+}
+.icons button:hover{
+    background-color: var(--main_color);
+    color: white;
 }
 .icons span{
     border: 1px solid #646362;
@@ -771,9 +783,7 @@ font-weight: 300;
 }
 
 .food-galery-no-galery h1{
-    font-family: "Alegreya Sans", sans-serif;
   font-weight: 700;
-  font-style: italic;
     font-size: 3.5rem;
 }
 
